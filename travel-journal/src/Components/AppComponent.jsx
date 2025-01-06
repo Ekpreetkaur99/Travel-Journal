@@ -8,7 +8,7 @@ export default function AppComponent(){
 const entryElements = Data.map((entry)=>{
     return(
         <Entry
-
+        key={entry.id}
         img={entry.img}
         country={entry.ciountry}
         link={entry.link}
