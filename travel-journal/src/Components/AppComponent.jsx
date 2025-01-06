@@ -9,7 +9,7 @@ const entryElements = Data.map((entry)=>{
         <Entry
         key={entry.id}
         entry={entry}
-        //Spread object as props using {...entry} and remove entry. from {props.entry.whatever here}
+        //Another way si to Spread object as props using {...entry} and remove entry. from {props.entry.whatever here}
 
         />
     )
