@@ -1,0 +1,125 @@
+header{
+  background-color: rgb(218, 86, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 80px;
+}
+header>img{
+  width:50px;
+  margin-right: 7px;
+}
+
+header>h1{
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: Inter;
+}
+html,body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.entry-container {
+  display: flex; /* Display content horizontally */
+  align-items: center; /* Vertically align content */
+  gap: 5px; /* Space between the image and the text */
+  margin-bottom: 20px; /* Space below the content */
+}
+
+.entry-img {
+  width: 200px; 
+  /* height: 200px;  */
+  border-radius: 45px; 
+  padding: 30px 30px;
+}
+
+.entry-text {
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+}
+
+.entry-text h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.entry-date {
+  font-size: 1rem;
+  color: #888; /* Lighter color for the date */
+  margin-top: 5px;
+}
+
+.entry-description {
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.entry-location {
+  display: flex;
+  align-items: center; /* Align the icon and text horizontally */
+  gap: 10px; /* Space between icon and text */
+  font-size: 1rem;
+  color: #444; /* Set a color for the location text */
+}
+
+.entry-location i {
+  font-size: 1.2rem; /* Adjust the icon size */
+  color: #f39c12; /* Set a color for the location icon */
+}
+
+.entry-location a {
+  color: rgb(218, 86, 108); /* Set the color for the link */
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold;
+
+}
+
+.entry-location a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.location-icon{
+  color:rgb(218, 86, 108);
+}
+
+.contact{
+  display: flex;
+  /* justify-content: center; */
+  margin:30px;
+}
+.contact-card{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+  width:300px;
+  text-align: center;
+  padding: 15px;
+}
+.contact-card img{
+  border-radius: 4%;
+  margin-bottom: 10px;
+  width:300px;
+}
+.info-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2 0;
+}
+.info-group p{
+  margin-left: 10px;
+  font-size: .9rem;
+  color:#666;
+}
+.info-group svg{
+  color: #4CAF50;
+}
+.contacts-container{
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+
+}
