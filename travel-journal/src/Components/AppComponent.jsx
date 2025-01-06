@@ -1,6 +1,5 @@
 import Header from "./Header";
 import Entry from './Entry';
-import GoodNight from "./GoodNight";
 import Contacts from "./Contacts";
 import Data from "../Data";
 export default function AppComponent(){
@@ -9,12 +8,8 @@ const entryElements = Data.map((entry)=>{
     return(
         <Entry
         key={entry.id}
-        img={entry.img}
-        country={entry.ciountry}
-        link={entry.link}
-        place={entry.place}
-        date={entry.date}
-        description={entry.description}
+        entry={entry}
+        //Spread object as props using {...entry} and remove entry. from {props.entry.whatever here}
 
         />
     )

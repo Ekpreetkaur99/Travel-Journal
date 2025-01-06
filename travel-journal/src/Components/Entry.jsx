@@ -4,21 +4,21 @@ export default function Entry(props) {
   return (
     <>
     <div className="entry-container">
-      <img className="entry-img" src={props.img} />
+      <img className="entry-img" src={props.entry.img} />
 
       <div className="entry-text">
         <div className="entry-location">
           <FaMapMarkerAlt className="location-icon"/>
-          <span>{props.country}</span>
-          <a href={props.link} target="_blank" rel="noopener noreferrer">
+          <span>{props.entry.country}</span>
+          <a href={props.entry.link} target="_blank" rel="noopener noreferrer">
             View on Google Maps
           </a>
         </div>
 
-        <h3>{props.place}</h3>
-        <div className="entry-date">{props.date}</div>
+        <h3>{props.entry.place}</h3>
+        <div className="entry-date">{props.entry.date}</div>
         <p className="entry-description">
-          {props.description}
+          {props.entry.description}
         </p>
       </div>
     </div>
